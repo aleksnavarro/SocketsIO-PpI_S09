@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Chat en vivo con WebSockets</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <link href="/styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!--<h1>Aquí va el material</h1>-->
+    <div id="Chat test">
+      <div id="chat-window">
+        <div id="output"></div>
+        <div id="feedback"></div>
+      </div>
+      <input id="handle" type="text" placeholder="Handle"/>
+      <input id="message" type="text" placeholder="Message"/>
+      <button id="send">Enviar</button>
+    </div>
+  </body>
+  <script src="/chat.js""></script>
+</html>
