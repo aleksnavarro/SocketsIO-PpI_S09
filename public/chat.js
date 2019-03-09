@@ -8,12 +8,6 @@ var message = document.getElementById('message'),
     output = document.getElementById('output'),
     feedback = document.getElementById('feedback');
 
-var el = document.getElementById('server-time');
-
-socket.on('time', function(timeString) {
-  el.innerHTML = 'Server time: ' + timeString;
-});
-
 // Eventos
 
 btn.addEventListener('click',function(){
