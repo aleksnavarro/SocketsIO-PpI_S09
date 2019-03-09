@@ -24,10 +24,10 @@ message.addEventListener('keypress',function(){
 
 // Escuchar Eventos
 socket.on('chat',function(data){
-  feedback.innerHTML = '';
-  output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
+    feedback.innerHTML = '';
+    output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
 });
 
 socket.on('typing',function(data){
-  feedback.innerHTML = '<p><em>'+data+' esta escribiendo... </em></p>';
+    feedback.innerHTML = '<p><em>' + data + ' esta escribiendo...</em></p>';
 });
